@@ -111,7 +111,7 @@ export default function Hero() {
         minWidth: '220px'
       }}>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <span style={{ color: 'var(--color-forest-main)', fontSize: '0.70rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 800, marginBottom: '4px' }}>Desenvolvido por:</span>
+          <span style={{ color: 'var(--color-forest-main)', fontSize: '0.70rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 800, marginBottom: '4px' }}>Submetido por:</span>
           <img src="/cmc-horiz-cor.png" alt="Logo IFAM" style={{ height: '32px', objectFit: 'contain' }} />
         </div>
       </div>
