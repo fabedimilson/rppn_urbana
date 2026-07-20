@@ -9,6 +9,7 @@ export default function Hero() {
       display: 'flex',
       alignItems: 'center',
       paddingTop: '80px',
+      paddingBottom: '120px', /* Prevent overlap with absolute logo */
       overflow: 'hidden'
     }}>
       {/* Background Video */}
@@ -38,8 +39,8 @@ export default function Hero() {
       }} />
 
       <div className="container animate-fade-in">
-        <div style={{ maxWidth: '800px' }}>
-          <div style={{ 
+        <div style={{ maxWidth: '800px', marginLeft: '5%', paddingRight: '1rem' }}>
+          <div className="hero-tag" style={{ 
             display: 'inline-block',
             padding: '0.5rem 1rem', 
             background: 'rgba(110, 231, 165, 0.1)',
@@ -48,7 +49,8 @@ export default function Hero() {
             color: 'var(--color-forest-accent)',
             fontWeight: 600,
             marginBottom: '1.5rem',
-            fontSize: '0.9rem'
+            fontSize: '0.9rem',
+            lineHeight: '1.4'
           }}>
             🌱 Portal Demonstrativo Exclusivo • Edital de Clima e Economia do iCS
           </div>
