@@ -1,7 +1,7 @@
 import React from 'react';
 import { BookOpen, CheckCircle, ArrowRight } from 'lucide-react';
 
-export default function Guide() {
+export default function Guide({ onOpenCartilha }) {
   const steps = [
     { title: "Manifestação de Interesse", desc: "Proprietário aciona a SEMMAS declarando interesse na criação da RPPN." },
     { title: "Simulação e Vistoria", desc: "Análise técnica in loco para valoração dos serviços ecossistêmicos." },
@@ -40,7 +40,7 @@ export default function Guide() {
           ))}
           
           <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-            <button className="btn btn-primary">
+            <button className="btn btn-primary" onClick={onOpenCartilha}>
               Baixar Cartilha Completa (PDF) <ArrowRight size={20} />
             </button>
           </div>

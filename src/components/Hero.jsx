@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Shield, Heart } from 'lucide-react';
 
-export default function Hero() {
+export default function Hero({ onOpenCartilha }) {
   return (
     <section style={{
       position: 'relative',
@@ -73,14 +73,14 @@ export default function Hero() {
               <button className="btn btn-primary" onClick={() => document.getElementById('simulador').scrollIntoView({ behavior: 'smooth'})}>
                 Acessar Simulador <ArrowRight size={20} />
               </button>
-              <button className="btn btn-outline" onClick={() => document.getElementById('cartilha').scrollIntoView({ behavior: 'smooth'})}>
+              <button className="btn btn-outline" onClick={onOpenCartilha}>
                 Conhecer a Cartilha
               </button>
             </div>
           </div>
 
-          {/* Right Column: Stacked Features Cards */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', maxWidth: '380px' }}>
+          {/* Right Column: Stacked Features Cards (Hidden on mobile for clean Hero) */}
+          <div className="hero-right-cards" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', maxWidth: '380px' }}>
             <div className="glass-card" style={{ 
               padding: '1.5rem', 
               background: 'rgba(255, 255, 255, 0.07)', 
@@ -125,8 +125,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Floating Logo - Cover the Gemini watermark (raised higher up to bottom: 55px) */}
-      <div style={{
+      {/* Floating Logo - Cover the Gemini watermark */}
+      <div className="ifam-overlay-box" style={{
         position: 'absolute',
         bottom: '55px',
         right: '25px',

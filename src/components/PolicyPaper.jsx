@@ -1,7 +1,7 @@
 import React from 'react';
 import { FileText, Download } from 'lucide-react';
 
-export default function PolicyPaper() {
+export default function PolicyPaper({ onOpenCartilha }) {
   return (
     <section className="section" style={{ backgroundColor: 'var(--color-forest-dark)', padding: '4rem 0' }}>
       <div className="container">
@@ -30,8 +30,8 @@ export default function PolicyPaper() {
           </div>
           
           <div>
-            <button className="btn btn-outline" style={{ borderColor: 'var(--color-forest-accent)', color: 'var(--color-forest-accent)' }} disabled>
-              <Download size={20} /> Em Breve (Fase 3)
+            <button className="btn btn-outline" style={{ borderColor: 'var(--color-forest-accent)', color: 'var(--color-forest-accent)', cursor: 'pointer' }} onClick={onOpenCartilha}>
+              <Download size={20} /> Ver Previsão de Lançamento
             </button>
           </div>
         </div>
