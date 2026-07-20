@@ -79,7 +79,7 @@ export default function CartilhaModal({ isOpen, onClose }) {
           fontSize: '0.85rem',
           marginBottom: '1.25rem'
         }}>
-          <Calendar size={16} /> Previsão de Publicação: Outubro / 2026
+          <Calendar size={16} /> Previsão de Publicação: Agosto / 2028
         </div>
 
         <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#ffffff' }}>
