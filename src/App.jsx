@@ -32,10 +32,18 @@ function App() {
       
       <CartilhaModal isOpen={isModalOpen} onClose={closeCartilhaModal} />
 
-      <footer style={{ background: 'var(--color-forest-dark)', padding: '2rem 0', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-        <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--color-gray-200)' }}>
-          © 2026 IFAM - Instituto Federal do Amazonas | Protótipo Demonstrativo para o Edital iCS
-        </p>
+      <footer style={{ background: 'var(--color-forest-dark)', padding: '2.5rem 0', textAlign: 'center', borderTop: '1px solid rgba(110, 231, 165, 0.2)' }}>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' }}>
+          <p style={{ margin: 0, fontSize: '0.95rem', fontWeight: 600, color: 'var(--color-white)' }}>
+            Coordenador e Desenvolvedor: <span style={{ color: 'var(--color-forest-accent)' }}>Dr. Edimilson Cavalcante da Fonseca</span>
+          </p>
+          <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--color-gray-200)' }}>
+            E-mail: <a href="mailto:edimilson@ifam.edu.br" style={{ color: 'var(--color-forest-accent)', textDecoration: 'none', fontWeight: 600 }}>edimilson@ifam.edu.br</a>
+          </p>
+          <p style={{ margin: '0.5rem 0 0 0', fontSize: '0.85rem', color: 'rgba(255, 255, 255, 0.6)' }}>
+            © 2026 IFAM - Instituto Federal do Amazonas | Protótipo Demonstrativo Exclusivo para o Edital iCS
+          </p>
+        </div>
       </footer>
     </>
   );
