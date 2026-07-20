@@ -99,21 +99,20 @@ export default function Hero() {
         position: 'absolute',
         bottom: '10px',
         right: '10px',
-        background: 'rgba(7, 42, 21, 1)',
-        padding: '15px 25px',
-        borderRadius: '12px',
-        border: '2px solid var(--color-forest-accent)',
+        background: 'rgba(255, 255, 255, 0.95)',
+        padding: '12px 20px',
+        borderRadius: '8px',
+        border: '1px solid rgba(0,0,0,0.1)',
         display: 'flex',
         alignItems: 'center',
         gap: '15px',
-        boxShadow: '0 4px 16px rgba(0,0,0,0.8)',
+        boxShadow: '0 4px 16px rgba(0,0,0,0.5)',
         zIndex: 10,
-        minWidth: '220px',
-        minHeight: '60px'
+        minWidth: '220px'
       }}>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <span style={{ color: 'var(--color-gray-200)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '4px' }}>Desenvolvido por:</span>
-          <img src="/cmc-horiz-cor.png" alt="Logo" style={{ height: '30px', objectFit: 'contain' }} />
+          <span style={{ color: 'var(--color-forest-main)', fontSize: '0.70rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 800, marginBottom: '4px' }}>Desenvolvido por:</span>
+          <img src="/cmc-horiz-cor.png" alt="Logo IFAM" style={{ height: '32px', objectFit: 'contain' }} />
         </div>
       </div>
     </section>
